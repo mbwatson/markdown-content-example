@@ -37,6 +37,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.md$/,
+        use: 'raw-loader',
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/i,
         // type:
         //   "asset/inline": base-64 inline images in js bundle
